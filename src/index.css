@@ -1,0 +1,225 @@
+/* ============================================================
+   DESIGN TOKENS - Sistem Desa Digital (Tema Teal)
+   ============================================================ */
+:root {
+  /* Warna primer (Teal / Hijau Kebiruan) */
+  --primary: #0d9488;
+  --primary-hover: #0f766e;
+  --primary-active: #115e59;
+  --primary-50: #f0fdfa;
+  --primary-100: #ccfbf1;
+  --primary-200: #99f6e4;
+  --primary-300: #5eead4;
+  --on-primary: #ffffff;
+
+  /* Netral (Slate) */
+  --text: #475569;
+  --text-strong: #0f172a;
+  --text-muted: #64748b;
+  --bg: #f1f5f9;
+  --surface: #ffffff;
+  --surface-alt: #f8fafc;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --code-bg: #f1f5f9;
+
+  /* Warna semantik */
+  --success: #16a34a;
+  --success-bg: #f0fdf4;
+  --success-border: #bbf7d0;
+  --danger: #dc2626;
+  --danger-bg: #fef2f2;
+  --danger-border: #fecaca;
+  --warning: #d97706;
+  --warning-bg: #fffbeb;
+  --warning-border: #fde68a;
+  --info: #0284c7;
+  --info-bg: #f0f9ff;
+  --info-border: #bae6fd;
+
+  /* Radius - tegas, tanpa lengkungan */
+  --radius-sm: 0;
+  --radius: 0;
+  --radius-lg: 0;
+  --radius-full: 0;
+
+  /* Bayangan */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 14px rgba(15, 23, 42, 0.1);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.16);
+
+  /* Dimensi layout */
+  --sidebar-w: 264px;
+  --header-h: 66px;
+
+  /* Tipografi - Poppins untuk seluruh aplikasi */
+  --font: 'Poppins', system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --heading: 'Poppins', system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'Poppins', system-ui, 'Segoe UI', Roboto, Arial, sans-serif;
+
+  font: 15px/155% var(--font);
+  letter-spacing: 0.1px;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mode gelap */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #14b8a6;
+    --primary-hover: #2dd4bf;
+    --primary-active: #5eead4;
+    --primary-50: rgba(20, 184, 166, 0.12);
+    --primary-100: rgba(20, 184, 166, 0.2);
+    --primary-200: rgba(20, 184, 166, 0.3);
+    --primary-300: rgba(20, 184, 166, 0.45);
+    --on-primary: #042f2e;
+
+    --text: #cbd5e1;
+    --text-strong: #f1f5f9;
+    --text-muted: #94a3b8;
+    --bg: #0b1220;
+    --surface: #131c2e;
+    --surface-alt: #1a2438;
+    --border: #263349;
+    --border-strong: #3b4a63;
+    --code-bg: #1a2438;
+
+    --success: #4ade80;
+    --success-bg: rgba(74, 222, 128, 0.12);
+    --success-border: rgba(74, 222, 128, 0.32);
+    --danger: #f87171;
+    --danger-bg: rgba(248, 113, 113, 0.12);
+    --danger-border: rgba(248, 113, 113, 0.32);
+    --warning: #fbbf24;
+    --warning-bg: rgba(251, 191, 36, 0.12);
+    --warning-border: rgba(251, 191, 36, 0.32);
+    --info: #38bdf8;
+    --info-bg: rgba(56, 189, 248, 0.12);
+    --info-border: rgba(56, 189, 248, 0.32);
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.55);
+  }
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading);
+  color: var(--text-strong);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(22px, 4vw, 30px);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-size: clamp(19px, 3vw, 22px);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin: 0 0 8px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--primary);
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 13px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--code-bg);
+  color: var(--text-strong);
+}
+
+button {
+  font-family: var(--font);
+}
+
+input,
+select,
+textarea {
+  font-family: var(--font);
+}
+
+::placeholder {
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--primary-200);
+  color: var(--text-strong);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
