@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, FilePlus2, History, Files, Phone, Users, RefreshCcw } from 'lucide-react';
+import { LayoutDashboard, FilePlus2, History, Files, Phone, RefreshCcw } from 'lucide-react';
+
 // DEMO MODE: tombol reset data demo
 import { resetDemoData } from '../lib/api';
 
@@ -7,7 +8,6 @@ const NAV_ITEMS = [
   { to: '/', label: 'Dashboard', icon: LayoutDashboard },
   { to: '/buat-surat', label: 'Buat Surat', icon: FilePlus2 },
   { to: '/riwayat', label: 'Riwayat Surat', icon: History },
-  { to: '/warga', label: 'Data Warga', icon: Users },
 ];
 
 export default function Sidebar({ isOpen, onClose }) {
@@ -24,8 +24,8 @@ export default function Sidebar({ isOpen, onClose }) {
           <Files size={21} />
         </span>
         <div>
-          <p className="sidebar-brand-name">Desa Digital <span className="badge badge-amber" title="Versi demo, data tersimpan di browser">DEMO</span></p>
-          <p className="sidebar-brand-desc">Administrasi Desa Cangak</p>
+          <p className="sidebar-brand-name">Desa Digital</p>
+          <p className="sidebar-brand-desc">Administrasi Desa Melati</p>
         </div>
       </div>
 

@@ -5,7 +5,7 @@ import html2pdf from 'html2pdf.js';
 import { FileText, Eye, Printer, Download, RotateCcw, RefreshCw, Inbox } from 'lucide-react';
 import ConfirmModal from '../components/ConfirmModal';
 
-const NAMA_DESA = 'Cangak';
+const NAMA_DESA = 'Melati';
 const ALAMAT_MAX = 255;
 const KETERANGAN_MAX = 500;
 
@@ -401,14 +401,14 @@ export default function BuatSurat() {
           <div style="display:flex;align-items:center;margin-bottom:2px;">
             <div style="width:80px;height:90px;border:1px dashed #ccc;display:flex;align-items:center;justify-content:center;margin-right:15px;font-size:10px;text-align:center;">[LOGO]</div>
             <div style="flex:1;text-align:center;">
-              <h3 style="margin:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;">PEMERINTAH KABUPATEN PEMALANG</h3>
-              <h3 style="margin:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;">KECAMATAN BODEH</h3>
+              <h3 style="margin:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;">PEMERINTAH KABUPATEN SEJAHTERA</h3>
+              <h3 style="margin:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;">KECAMATAN BUNGA</h3>
               <h2 style="margin:0;font-size:22px;text-transform:uppercase;letter-spacing:2px;">DESA ${NAMA_DESA.toUpperCase()}</h2>
             </div>
           </div>
           <div style="text-align:center;margin-bottom:5px;">
-            <p style="margin:0;font-size:12px;font-style:italic;">Sekretariat : Jl Raya ${NAMA_DESA} No 2009 Kec. Bodeh Kab. Pemalang Kode Pos, 52365</p>
-            <p style="margin:0;font-size:12px;font-style:italic;">Email : cangak@desakupemalang.id Web : https://cangak.desa.id</p>
+            <p style="margin:0;font-size:12px;font-style:italic;">Sekretariat : Jl Raya ${NAMA_DESA} No 2009 Kec. Bunga Kab. Sejahtera Kode Pos, 52365</p>
+            <p style="margin:0;font-size:12px;font-style:italic;">Email : melati@desasejahtera.id Web : https://melati.desa.id</p>
           </div>
           <div style="border-bottom:1px solid black;margin-bottom:1px;"></div>
           <div style="border-bottom:3px solid black;margin-bottom:30px;"></div>
@@ -417,7 +417,7 @@ export default function BuatSurat() {
             <p style="margin:0;font-size:15px;">Nomor : ${noSuratLengkap}</p>
           </div>
           <div style="text-align:justify;margin-bottom:20px;font-size:15px;">
-            <p style="text-indent:40px;margin-bottom:5px;">Yang bertanda tangan dibawah ini Kepala Desa ${NAMA_DESA}, Kecamatan Bodeh Kabupaten Pemalang Propinsi Jawa tengah.</p>
+            <p style="text-indent:40px;margin-bottom:5px;">Yang bertanda tangan dibawah ini Kepala Desa ${NAMA_DESA}, Kecamatan Bunga Kabupaten Sejahtera Propinsi Jawa tengah.</p>
             <p style="margin-bottom:15px;">Dengan ini menerangkan yang sebenarnya bahwa :</p>
             <table style="width:100%;border-collapse:collapse;"><tbody>
               ${bodyRows}
@@ -563,7 +563,7 @@ export default function BuatSurat() {
               </div>
               <div className="field">
                 <label htmlFor="tempatLahir">Tempat lahir <Req /></label>
-                <input id="tempatLahir" type="text" name="tempatLahir" value={formData.tempatLahir} onChange={handleChange} placeholder="Kendal" required />
+                <input id="tempatLahir" type="text" name="tempatLahir" value={formData.tempatLahir} onChange={handleChange} placeholder="Melati" required />
               </div>
               <div className="field">
                 <label htmlFor="tanggalLahir">Tanggal lahir <Req /></label>
@@ -584,7 +584,7 @@ export default function BuatSurat() {
                   name="alamat"
                   value={formData.alamat}
                   onChange={handleChange}
-                  placeholder="RT 02 RW 03 Desa Mulyorejo, Kecamatan Patebon, Kabupaten Kendal"
+                  placeholder="RT 02 RW 03 Desa Melati, Kecamatan Bunga, Kabupaten Sejahtera"
                   rows="2"
                   maxLength={ALAMAT_MAX}
                   required
@@ -741,13 +741,13 @@ export default function BuatSurat() {
               <div className="letter-head">
                 <div className="emblem">✿</div>
                 <div>
-                  <strong>PEMERINTAH KABUPATEN PEMALANG<br />KECAMATAN BODEH<br />DESA {NAMA_DESA.toUpperCase()}</strong>
-                  <div>Jl. Raya {NAMA_DESA} No. 2009 Kec. Bodeh Kab. Pemalang</div>
+                  <strong>PEMERINTAH KABUPATEN SEJAHTERA<br />KECAMATAN BUNGA<br />DESA {NAMA_DESA.toUpperCase()}</strong>
+                  <div>Jl. Raya {NAMA_DESA} No. 2009 Kec. Bunga Kab. Sejahtera</div>
                 </div>
               </div>
               <h2 className="letter-title">{(jenisFinal || 'SURAT KETERANGAN').toUpperCase()}</h2>
               <p className="letter-number">Nomor: <span>{noSuratLengkap}</span></p>
-              <p className="letter-p">Yang bertanda tangan di bawah ini Kepala Desa {NAMA_DESA}, Kecamatan Bodeh, Kabupaten Pemalang, dengan ini menerangkan bahwa:</p>
+              <p className="letter-p">Yang bertanda tangan di bawah ini Kepala Desa {NAMA_DESA}, Kecamatan Bunga, Kabupaten Sejahtera, dengan ini menerangkan bahwa:</p>
               <table className="data-table">
                 <tbody>
                   <tr><td>Nama Lengkap</td><td>:</td><td>{formData.nama || '—'}</td></tr>

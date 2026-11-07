@@ -190,7 +190,7 @@
   background: var(--primary-50);
   color: var(--primary-hover);
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .header-profile-text {
@@ -284,7 +284,7 @@
 .sidebar-brand-name {
   margin: 0;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--primary-hover);
   line-height: 1.3;
 }
@@ -307,7 +307,6 @@
   padding: 14px 12px 6px;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
@@ -637,7 +636,6 @@
 .trend-filter-field label {
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
@@ -738,7 +736,7 @@
 
 .stat-value {
   font-size: 26px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--text-strong);
 }
@@ -806,7 +804,7 @@
 
 .required {
   color: var(--danger);
-  font-weight: 800;
+  font-weight: 700;
   margin-left: 2px;
 }
 
@@ -831,7 +829,6 @@
 /* NIK: proporsional 16 digit, digit utuh, nol di awal aman (teks, bukan number) */
 .nik-input {
   font-family: var(--mono);
-  letter-spacing: 1.5px;
   font-variant-numeric: tabular-nums;
   min-width: 0;
 }
@@ -890,7 +887,6 @@
 .d-welcome h1 {
   margin: 0 0 4px;
   font-size: 24px;
-  letter-spacing: -0.5px;
 }
 
 .d-welcome p {
@@ -928,7 +924,7 @@
 .d-link {
   font-size: 11.5px;
   color: var(--primary-hover);
-  font-weight: 650;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -981,8 +977,7 @@
 
 .d-stat-value {
   font-size: 27px;
-  font-weight: 750;
-  letter-spacing: -0.7px;
+  font-weight: 700;
   margin: 10px 0 5px;
   color: var(--text-strong);
 }
@@ -1044,7 +1039,6 @@
 .d-trend-field label {
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
@@ -1308,7 +1302,6 @@
 .page-head h1 {
   margin: 0 0 3px;
   font-size: 23px;
-  letter-spacing: -0.4px;
 }
 
 .page-head p {
@@ -1420,7 +1413,7 @@
 .form-body label {
   display: block;
   font-size: 11px;
-  font-weight: 650;
+  font-weight: 700;
   margin-bottom: 6px;
   color: var(--text-strong);
 }
@@ -1937,7 +1930,6 @@
   margin: 0;
   font-weight: 700;
   font-size: 13px;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -2003,7 +1995,6 @@
 
 .surat-nik {
   font-family: ui-monospace, Consolas, monospace;
-  letter-spacing: 0.5px;
 }
 
 .surat-ttd {
@@ -2240,7 +2231,6 @@
   padding: 11px 14px;
   font-size: 11.5px;
   font-weight: 700;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-muted);
   background: var(--surface-alt);
@@ -2376,8 +2366,7 @@
 .page-title {
   margin: 0 0 4px;
   font-size: clamp(20px, 3vw, 24px);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-weight: 700;
   color: var(--text-strong);
 }
 
@@ -2652,7 +2641,6 @@
   margin: 0;
   font-size: 12.5px;
   font-weight: 700;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
@@ -2777,7 +2765,7 @@
 .login-title {
   margin: 0;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-strong);
 }
 
@@ -2918,7 +2906,6 @@
 .d-welcome h1 {
   margin: 0 0 4px;
   font-size: 24px;
-  letter-spacing: -0.5px;
 }
 
 .d-welcome p {
@@ -3022,8 +3009,7 @@
 
 .d-stat-value {
   font-size: 27px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
+  font-weight: 700;
   margin: 10px 0 5px;
   color: var(--text-strong);
 }
@@ -3097,7 +3083,6 @@
 .d-trend-field label {
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
@@ -3261,7 +3246,6 @@
   color: var(--text-muted);
   background: var(--surface-alt);
   font-size: 10.5px;
-  letter-spacing: 0.04em;
 }
 
 .d-table tbody tr:last-child td {
@@ -3438,7 +3422,6 @@
 .surat-page .page-head h1 {
   margin: 0 0 3px;
   font-size: 23px;
-  letter-spacing: -0.4px;
 }
 
 .surat-page .page-head p {
@@ -3601,7 +3584,6 @@
 
 .surat-page .nik-input {
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.5px;
   font-family: var(--mono);
 }
 
@@ -3981,7 +3963,6 @@
 
 .dashboard-page .stat-value {
   font-size: 27px;
-  letter-spacing: -0.7px;
 }
 
 .dashboard-page .table {
@@ -4122,7 +4103,6 @@
 .riwayat-page .rw-welcome h1 {
   margin: 0 0 4px;
   font-size: 24px;
-  letter-spacing: -0.5px;
 }
 
 .riwayat-page .rw-welcome p {

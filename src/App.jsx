@@ -4,7 +4,6 @@ import BuatSurat from './pages/BuatSurat';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Riwayat from './pages/Riwayat';
-import Warga from './pages/Warga';
 import MainLayout from './components/MainLayout';
 
 // Komponen Penjaga Rute (Protected Route)
@@ -36,10 +35,6 @@ function App() {
           <Route
             path="/riwayat"
             element={<ProtectedRoute><Riwayat /></ProtectedRoute>}
-          />
-          <Route
-            path="/warga"
-            element={<ProtectedRoute><Warga /></ProtectedRoute>}
           />
         </Routes>
       </MainLayout>

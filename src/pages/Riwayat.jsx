@@ -37,14 +37,14 @@ const buildLetterHTML = (item) => {
       <div style="display:flex;align-items:center;margin-bottom:2px;">
         <div style="width:80px;height:90px;border:1px dashed #ccc;display:flex;align-items:center;justify-content:center;margin-right:15px;font-size:10px;text-align:center;">[LOGO]</div>
         <div style="flex:1;text-align:center;">
-          <h3 style="margin:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;">PEMERINTAH KABUPATEN PEMALANG</h3>
-          <h3 style="margin:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;">KECAMATAN BODEH</h3>
-          <h2 style="margin:0;font-size:22px;text-transform:uppercase;letter-spacing:2px;">DESA CANGAK</h2>
+          <h3 style="margin:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;">PEMERINTAH KABUPATEN SEJAHTERA</h3>
+          <h3 style="margin:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;">KECAMATAN BUNGA</h3>
+          <h2 style="margin:0;font-size:22px;text-transform:uppercase;letter-spacing:2px;">DESA MELATI</h2>
         </div>
       </div>
       <div style="text-align:center;margin-bottom:5px;">
-        <p style="margin:0;font-size:12px;font-style:italic;">Sekretariat : Jl Raya Cangak No 2009 Kec. Bodeh Kab. Pemalang Kode Pos, 52365</p>
-        <p style="margin:0;font-size:12px;font-style:italic;">Email : cangak@desakupemalang.id Web : https://cangak.desa.id</p>
+        <p style="margin:0;font-size:12px;font-style:italic;">Sekretariat : Jl Raya Melati No 2009 Kec. Bunga Kab. Sejahtera Kode Pos, 52365</p>
+        <p style="margin:0;font-size:12px;font-style:italic;">Email : melati@desasejahtera.id Web : https://melati.desa.id</p>
       </div>
       <div style="border-bottom:1px solid black;margin-bottom:1px;"></div>
       <div style="border-bottom:3px solid black;margin-bottom:30px;"></div>
@@ -53,20 +53,20 @@ const buildLetterHTML = (item) => {
         <p style="margin:0;font-size:15px;">Nomor : ${item.no_surat || '-'}</p>
       </div>
       <div style="text-align:justify;margin-bottom:20px;font-size:15px;">
-        <p style="text-indent:40px;margin-bottom:5px;">Yang bertanda tangan dibawah ini Kepala Desa Cangak, Kecamatan Bodeh Kabupaten Pemalang Propinsi Jawa tengah.</p>
+        <p style="text-indent:40px;margin-bottom:5px;">Yang bertanda tangan dibawah ini Kepala Desa Melati, Kecamatan Bunga Kabupaten Sejahtera Propinsi Jawa tengah.</p>
         <p style="margin-bottom:15px;">Dengan ini menerangkan yang sebenarnya bahwa :</p>
         <table style="width:100%;border-collapse:collapse;"><tbody>
           <tr><td style="width:5%;vertical-align:top;">1.</td><td style="width:35%;vertical-align:top;">Nama</td><td style="width:2%;vertical-align:top;">:</td><td style="text-transform:uppercase;font-weight:bold;">${item.nama || '-'}</td></tr>
           <tr><td style="vertical-align:top;">2.</td><td style="vertical-align:top;">NIK</td><td style="vertical-align:top;">:</td><td>${item.nik || '-'}</td></tr>
           <tr><td style="vertical-align:top;">3.</td><td style="vertical-align:top;">Tanggal Terbit</td><td style="vertical-align:top;">:</td><td>${formatTanggalPanjang(item.tanggal)}</td></tr>
-          <tr><td style="vertical-align:top;padding-top:10px;">4.</td><td style="vertical-align:top;padding-top:10px;">Keterangan</td><td style="vertical-align:top;padding-top:10px;">:</td><td style="padding-top:10px;text-align:justify;">Bahwa nama tersebut di atas adalah benar warga Desa Cangak, Kecamatan Bodeh, Kabupaten Pemalang. Surat keterangan ini diterbitkan berdasarkan arsip administrasi Pemerintah Desa.</td></tr>
+          <tr><td style="vertical-align:top;padding-top:10px;">4.</td><td style="vertical-align:top;padding-top:10px;">Keterangan</td><td style="vertical-align:top;padding-top:10px;">:</td><td style="padding-top:10px;text-align:justify;">Bahwa nama tersebut di atas adalah benar warga Desa Melati, Kecamatan Bunga, Kabupaten Sejahtera. Surat keterangan ini diterbitkan berdasarkan arsip administrasi Pemerintah Desa.</td></tr>
         </tbody></table>
         <p style="text-indent:40px;margin-top:20px;">Demikian surat keterangan ini kami buat dan untuk dipergunakan sebagaimana mestinya.</p>
       </div>
       <div style="display:flex;justify-content:flex-end;margin-top:30px;">
         <div style="text-align:center;width:250px;">
-          <p style="margin:0;">Cangak, ${formatTanggalPanjang(item.tanggal)}</p>
-          <p style="margin:0;margin-bottom:70px;">Kepala Desa Cangak</p>
+          <p style="margin:0;">Melati, ${formatTanggalPanjang(item.tanggal)}</p>
+          <p style="margin:0;margin-bottom:70px;">Kepala Desa Melati</p>
           <p style="margin:0;font-weight:bold;text-decoration:underline;">ERWANTO, S.Pd</p>
         </div>
       </div>

@@ -57,7 +57,7 @@ export default function Login() {
           </div>
           <div>
             <h2 className="login-title">Sistem Desa Digital</h2>
-            <p className="login-subtitle">Masuk ke panel administrasi Desa Cangak</p>
+            <p className="login-subtitle">Masuk ke panel administrasi Desa Melati</p>
           </div>
         </div>
 
